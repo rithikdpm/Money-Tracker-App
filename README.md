@@ -26,12 +26,6 @@ Get the latest APK from the [Releases page](https://github.com/rithikdpm/money-t
 - Works fully offline, data stays on your device
 - Mobile-first design
 
-## Screenshots
-
-| Home | Credit | Debit |
-|---|---|---|
-| ![Home](screenshots/home.png) | ![Credit](screenshots/credit.png) | ![Debit](screenshots/debit.png) |
-
 ## Tech Stack
 
 - HTML, CSS, JavaScript
