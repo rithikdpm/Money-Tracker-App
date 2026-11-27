@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Money Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <div class="balance">
+    <small class="dev">Developed by<a href="https://linkedin.com/in/rithikdpm" target="_blank" rel="noopener">Rithikdpm </a></small>
+    <span>Available Balance</span>
+    <h1 id="balance">₹0.00</h1>
+  </div>
+
+  <div class="card">
+    <h3>Add Amount</h3>
+    <input id="amount" type="number" inputmode="decimal" min="0" step="0.01" placeholder="Amount">
+    <div class="toggle">
+      <button id="btnIn" class="in active" type="button" aria-label="Add money">+</button>
+      <button id="btnOut" class="out" type="button" aria-label="Remove money">−</button>
+    </div>
+    <input id="note" type="text" maxlength="255" placeholder="Note (optional)">
+    <button id="add" class="add" type="button">Add</button>
+  </div>
+
+  <h3 class="title">Transactions</h3>
+  <div class="filters">
+    <button type="button" data-f="ALL" class="active">All</button>
+    <button type="button" data-f="IN">Credit</button>
+    <button type="button" data-f="OUT">Debit</button>
+  </div>
+  <ul id="list" class="list"></ul>
+</main>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
